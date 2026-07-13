@@ -1,0 +1,42 @@
+<h2 mat-dialog-title>{{ 'upload.title' | translate }}</h2>
+
+<mat-dialog-content>
+  <form [formGroup]="form" (ngSubmit)="submit()" id="upload-form">
+    <mat-form-field appearance="outline" class="full-width type-select">
+      <mat-label>{{ 'upload.type' | translate }}</mat-label>
+      <mat-select formControlName="type">
+        @for (option of typeOptions; track option.value) {
+          <mat-option [value]="option.value">{{ option.labelKey | translate }}</mat-option>
+        }
+      </mat-select>
+    </mat-form-field>
+
+    <div class="file-picker">
+      <button mat-stroked-button type="button" (click)="fileInput.click()">
+        <mat-icon>attach_file</mat-icon>
+        {{ 'upload.chooseFile' | translate }}
+      </button>
+      <span class="file-name">{{ selectedFile()?.name ?? ('upload.noFile' | translate) }}</span>
+      <input #fileInput type="file" hidden (change)="onFileSelected($event)" />
+    </div>
+
+    @if (uploading()) {
+      <mat-progress-bar mode="indeterminate" />
+    }
+  </form>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button type="button" (click)="cancel()" [disabled]="uploading()">
+    {{ 'upload.cancel' | translate }}
+  </button>
+  <button
+    mat-flat-button
+    color="primary"
+    type="submit"
+    form="upload-form"
+    [disabled]="!selectedFile() || uploading()"
+  >
+    {{ 'upload.submit' | translate }}
+  </button>
+</mat-dialog-actions>

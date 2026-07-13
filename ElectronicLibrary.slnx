@@ -1,0 +1,17 @@
+<Solution>
+  <Folder Name="/aspire/">
+    <Project Path="aspire/ElectronicLibrary.AppHost/ElectronicLibrary.AppHost.csproj" />
+    <Project Path="aspire/ElectronicLibrary.ServiceDefaults/ElectronicLibrary.ServiceDefaults.csproj" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/ElectronicLibrary.Api/ElectronicLibrary.Api.csproj" />
+    <Project Path="src/ElectronicLibrary.Application/ElectronicLibrary.Application.csproj" />
+    <Project Path="src/ElectronicLibrary.Domain/ElectronicLibrary.Domain.csproj" />
+    <Project Path="src/ElectronicLibrary.Functions/ElectronicLibrary.Functions.csproj" />
+    <Project Path="src/ElectronicLibrary.Infrastructure/ElectronicLibrary.Infrastructure.csproj" />
+    <Project Path="src/ElectronicLibrary.Persistence/ElectronicLibrary.Persistence.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/ElectronicLibrary.Tests/ElectronicLibrary.Tests.csproj" />
+  </Folder>
+</Solution>

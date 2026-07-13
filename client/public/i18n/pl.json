@@ -1,0 +1,82 @@
+{
+  "app": {
+    "brand": "ElectronicLibrary",
+    "assets": "Assety",
+    "logout": "Wyloguj",
+    "language": "Język",
+    "theme": "Przełącz tryb ciemny"
+  },
+  "auth": {
+    "login": {
+      "title": "Zaloguj się",
+      "email": "Email",
+      "password": "Hasło",
+      "submit": "Zaloguj się",
+      "noAccount": "Nie masz konta? Zarejestruj się",
+      "invalidCredentials": "Nieprawidłowy email lub hasło."
+    },
+    "register": {
+      "title": "Utwórz konto",
+      "firstName": "Imię",
+      "lastName": "Nazwisko",
+      "email": "Email",
+      "password": "Hasło",
+      "submit": "Zarejestruj się",
+      "haveAccount": "Masz już konto? Zaloguj się",
+      "failed": "Rejestracja nie powiodła się."
+    }
+  },
+  "assets": {
+    "allAssets": "Wszystkie assety",
+    "all": "Wszystkie",
+    "types": {
+      "0": "Utwór",
+      "1": "Dyplom",
+      "2": "Plakat",
+      "3": "Nagranie"
+    },
+    "search": "Szukaj po nazwie",
+    "searchPlaceholder": "Wpisz, aby filtrować…",
+    "refresh": "Odśwież",
+    "upload": "Dodaj",
+    "empty": "Brak assetów.",
+    "columns": {
+      "title": "Tytuł",
+      "type": "Typ",
+      "status": "Status",
+      "size": "Rozmiar",
+      "uploadedBy": "Dodane przez"
+    },
+    "status": {
+      "pending": "Oczekuje",
+      "ready": "Gotowe"
+    },
+    "download": "Pobierz",
+    "delete": "Usuń",
+    "confirmDelete": {
+      "title": "Usuń asset",
+      "message": "Usunąć \"{{name}}\"? Tej operacji nie da się cofnąć.",
+      "cancel": "Anuluj",
+      "confirm": "Usuń"
+    },
+    "toast": {
+      "loadFailed": "Nie udało się wczytać assetów.",
+      "downloadFailed": "Nie udało się pobrać linku do pliku.",
+      "deleted": "Asset usunięty.",
+      "deleteFailed": "Nie udało się usunąć assetu."
+    }
+  },
+  "upload": {
+    "title": "Dodaj asset",
+    "type": "Typ",
+    "chooseFile": "Wybierz plik",
+    "noFile": "Nie wybrano pliku",
+    "cancel": "Anuluj",
+    "submit": "Dodaj",
+    "toast": {
+      "prepareFailed": "Nie udało się przygotować przesyłania.",
+      "started": "Przesyłanie rozpoczęte — plik pokaże się jako Oczekuje, dopóki nie zostanie przetworzony.",
+      "uploadFailed": "Nie udało się przesłać pliku do magazynu."
+    }
+  }
+}

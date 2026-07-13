@@ -1,0 +1,21 @@
+.auth-page {
+  display: flex;
+  justify-content: center;
+  padding-top: 4rem;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 360px;
+}
+
+.full-width {
+  width: 100%;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.error {
+  color: #b3261e;
+  font-size: 0.875rem;
+}

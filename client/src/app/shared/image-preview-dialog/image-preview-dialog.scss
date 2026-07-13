@@ -1,0 +1,27 @@
+.preview-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.5rem 0 1rem;
+}
+
+.preview-title {
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.preview-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem 1rem;
+
+  img {
+    max-width: 80vw;
+    max-height: 80vh;
+    object-fit: contain;
+    border-radius: 4px;
+  }
+}

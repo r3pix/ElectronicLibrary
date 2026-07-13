@@ -1,0 +1,82 @@
+{
+  "app": {
+    "brand": "ElectronicLibrary",
+    "assets": "Assets",
+    "logout": "Logout",
+    "language": "Language",
+    "theme": "Toggle dark mode"
+  },
+  "auth": {
+    "login": {
+      "title": "Sign in",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Sign in",
+      "noAccount": "Need an account? Register",
+      "invalidCredentials": "Invalid email or password."
+    },
+    "register": {
+      "title": "Create an account",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Register",
+      "haveAccount": "Already have an account? Sign in",
+      "failed": "Registration failed."
+    }
+  },
+  "assets": {
+    "allAssets": "All Assets",
+    "all": "All",
+    "types": {
+      "0": "Score",
+      "1": "Diploma",
+      "2": "Poster",
+      "3": "Recording"
+    },
+    "search": "Search by name",
+    "searchPlaceholder": "Type to filter…",
+    "refresh": "Refresh",
+    "upload": "Upload",
+    "empty": "No assets found.",
+    "columns": {
+      "title": "Title",
+      "type": "Type",
+      "status": "Status",
+      "size": "Size",
+      "uploadedBy": "Uploaded By"
+    },
+    "status": {
+      "pending": "Pending",
+      "ready": "Ready"
+    },
+    "download": "Download",
+    "delete": "Delete",
+    "confirmDelete": {
+      "title": "Delete asset",
+      "message": "Delete \"{{name}}\"? This cannot be undone.",
+      "cancel": "Cancel",
+      "confirm": "Delete"
+    },
+    "toast": {
+      "loadFailed": "Failed to load assets.",
+      "downloadFailed": "Failed to get a download link.",
+      "deleted": "Asset deleted.",
+      "deleteFailed": "Failed to delete asset."
+    }
+  },
+  "upload": {
+    "title": "Upload asset",
+    "type": "Type",
+    "chooseFile": "Choose file",
+    "noFile": "No file selected",
+    "cancel": "Cancel",
+    "submit": "Upload",
+    "toast": {
+      "prepareFailed": "Failed to prepare the upload.",
+      "started": "Upload started — it will show as Pending until processed.",
+      "uploadFailed": "Failed to upload the file to storage."
+    }
+  }
+}

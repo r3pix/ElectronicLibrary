@@ -1,0 +1,10 @@
+<div class="preview-header">
+  <span class="preview-title">{{ data.title }}</span>
+  <button mat-icon-button (click)="close()">
+    <mat-icon>close</mat-icon>
+  </button>
+</div>
+
+<mat-dialog-content class="preview-content">
+  <img [src]="data.imageUrl" [alt]="data.title" />
+</mat-dialog-content>

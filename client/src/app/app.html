@@ -1,0 +1,27 @@
+<mat-toolbar color="primary">
+  <span class="brand">{{ 'app.brand' | translate }}</span>
+  @if (authService.isAuthenticated()) {
+    <a mat-button routerLink="/">{{ 'app.assets' | translate }}</a>
+    <span class="spacer"></span>
+    <span class="user-email">{{ displayName() }}</span>
+    <button mat-icon-button (click)="themeService.toggle()" [matTooltip]="'app.theme' | translate">
+      <mat-icon>{{ themeService.theme() === 'dark' ? 'light_mode' : 'dark_mode' }}</mat-icon>
+    </button>
+    <button mat-icon-button [matMenuTriggerFor]="langMenu" [matTooltip]="'app.language' | translate">
+      <mat-icon>language</mat-icon>
+    </button>
+    <mat-menu #langMenu="matMenu">
+      <button mat-menu-item [class.active-lang]="languageService.currentLang() === 'en'" (click)="setLanguage('en')">
+        English
+      </button>
+      <button mat-menu-item [class.active-lang]="languageService.currentLang() === 'pl'" (click)="setLanguage('pl')">
+        Polski
+      </button>
+    </mat-menu>
+    <button mat-button (click)="logout()">{{ 'app.logout' | translate }}</button>
+  }
+</mat-toolbar>
+
+<main class="content">
+  <router-outlet />
+</main>
