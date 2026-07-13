@@ -179,9 +179,3 @@ the sole source. The Angular SPA deploys to Static Web Apps via its own GitHub A
 - [ ] Per-type metadata extraction (MusicXML: composer, instrument, key; PDF page counts)
 - [ ] Recordings pipeline (audio + video); heavier video transcode via Durable Functions or a Container Apps job
 - [ ] Search & filtering (composer, instrument, tags)
-
----
-
-## License
-
-_Personal project — add a license of your choice._
