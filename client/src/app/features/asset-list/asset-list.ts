@@ -65,7 +65,10 @@ export class AssetList implements OnInit, OnDestroy {
   readonly filteredAssets = computed(() => {
     const term = this.searchTerm().trim().toLowerCase();
     if (!term) return this.assets();
-    return this.assets().filter((asset) => (asset.title || asset.blobName).toLowerCase().includes(term));
+    return this.assets().filter(
+      (asset) => 
+        (asset.title || asset.blobName).toLowerCase().includes(term) || 
+        (asset.title || asset.blobName).toLowerCase().replace(' ', '').includes(term));
   });
 
   readonly hasPending = computed(() => this.assets().some((asset) => asset.status === AssetStatus.Pending));
